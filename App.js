@@ -8,30 +8,19 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  View,
 } from 'react-native';
+import Navigator from './app/navigation/navigator';
 
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.flexOne}>
-      <StatusBar
-        barStyle={'light-content'}
-      />
-        <View style={styles.container} >
-          <Text >Welcome to CricketAll</Text>
-        </View>
+    <SafeAreaView style={{flex: 1}}>
+      <StatusBar barStyle={'light-content'} />
+      <Navigator />
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  flexOne: {flex: 1},
-  container: {flex: 1, justifyContent:'center', alignItems:'center'}
-});
 
 export default App;
