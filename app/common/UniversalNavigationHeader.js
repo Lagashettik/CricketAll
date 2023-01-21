@@ -7,6 +7,7 @@ const UniversalNavigationHeader = ({
 	onPressBack = () => {},
 	containerStyle = {},
 	backIconStyle = {},
+	titleStyle = {},
 	...props
 }) => {
 	return (
@@ -30,12 +31,15 @@ const UniversalNavigationHeader = ({
 				/>
 			</TouchableOpacity>
 			<Text
-				style={{
-					marginLeft: 40,
-					color: "white",
-					fontSize: 20,
-					fontFamily: typography.secondary,
-				}}>
+				style={[
+					{
+						marginLeft: 40,
+						color: "white",
+						fontSize: 20,
+						fontFamily: typography.secondary,
+					},
+					titleStyle,
+				]}>
 				{title}
 			</Text>
 		</View>

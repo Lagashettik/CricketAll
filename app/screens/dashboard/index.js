@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Text, View } from "react-native";
-import LinearGradient from "react-native-linear-gradient";
 import { typography } from "../../theme/typography";
 
 const MainDashboard = (props) => {
@@ -19,7 +18,7 @@ const MainDashboard = (props) => {
 			<Button
 				title="New Game"
 				onPress={() => {
-					props.navigation.navigate("ScoreScreen");
+					props.navigation.navigate("EnterMatchDetails");
 				}}
 			/>
 		</View>

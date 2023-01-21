@@ -7,6 +7,7 @@ import MainDashboard from '../screens/dashboard'
 import ScoreScreen from '../screens/scoreScreen'
 import ScoreScreenRed from '../screens/scoreScreen/ScoreScreenRed'
 import MainDashboardRed from '../screens/dashboard/MainDashboardRed'
+import EnterMatchDetails from '../screens/enterMatchDetails'
 
 const Stack = createNativeStackNavigator()
 
@@ -18,6 +19,7 @@ const Navigator = () => {
             <Stack.Screen name='MainDashboardRed' component={MainDashboardRed} options={{headerShown: false}} />
             <Stack.Screen name='ScoreScreen' component={ScoreScreen} options={{headerShown: false}} />
             <Stack.Screen name='ScoreScreenRed' component={ScoreScreenRed} options={{headerShown: false}} />
+            <Stack.Screen name='EnterMatchDetails' component={EnterMatchDetails} options={{headerShown: false}} />
          </Stack.Navigator>
       </NavigationContainer>
    </Provider>
